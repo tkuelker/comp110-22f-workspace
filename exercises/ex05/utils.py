@@ -1,7 +1,8 @@
 """EX05 - 'list' Utility Functions."""
 
+
 def only_evens(xs: list[int]) -> list[int]:
-    """Returns a list of integers, containing only the even elements of the input parameter"""
+    """Returns a list of integers, containing only the even elements of the input parameter."""
     ys: list[int] = []
     i = 0
     while i < len(xs):
@@ -37,7 +38,7 @@ def sub(xs: list[int], i_start: int, i_end: int) -> None:
     if i_start < 0:
         i_start = 0
     if i_end > len(xs):
-        i_end = len(xs) - 1
+        i_end = len(xs)
     while i_start < i_end:
         ys.append(xs[i_start])
         i_start += 1

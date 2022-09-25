@@ -1,9 +1,10 @@
 """Test for EX05 Utils."""
 
-from exercises.ex05 import utils
+
 from utils import only_evens
 from utils import sub
 from utils import concat
+
 
 def test_only_evens_empyt() -> None:
     """Tests an empty list."""
@@ -64,7 +65,7 @@ def test_sub_start_less_than_end() -> None:
     """Tests when starting index is greater than ending index."""
     i_start: int = 1
     i_end: int = 8
-    xs: list[int] = [9, 99, 34, 15, 0, 0, 3, 2, 9, 0, 22, 102,]
+    xs: list[int] = [9, 99, 34, 15, 0, 0, 3, 2, 9, 0, 22, 102]
     assert sub(xs, i_start, i_end) == [99, 34, 15, 0, 0, 3, 2]
 
 
