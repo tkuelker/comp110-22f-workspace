@@ -4,7 +4,7 @@
 def only_evens(xs: list[int]) -> list[int]:
     """Returns a list of integers, containing only the even elements of the input parameter."""
     ys: list[int] = []
-    i = 0
+    i: int = 0
     while i < len(xs):
         if xs[i] % 2 == 0:
             ys.append(xs[i])
@@ -12,10 +12,10 @@ def only_evens(xs: list[int]) -> list[int]:
     return ys
 
 
-def concat(xs: list[int], ys: list[int]) -> None:
+def concat(xs: list[int], ys: list[int]) -> list[int]:
     """Returns a list containing all elements of the first list, followed by all elements of the second list."""
     zs: list[int] = []
-    i = 0
+    i: int = 0
     while i < len(xs):
         zs.append(xs[i])
         i += 1
@@ -26,7 +26,7 @@ def concat(xs: list[int], ys: list[int]) -> None:
     return zs
 
 
-def sub(xs: list[int], i_start: int, i_end: int) -> None:
+def sub(xs: list[int], i_start: int, i_end: int) -> list[int]:
     """Returns a list which is a subset of the given list, between the specified start index and the end index - 1."""
     ys: list[int] = []
     if len(xs) == 0:
